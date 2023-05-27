@@ -35,15 +35,18 @@ export default function Shop() {
         },
     ]
     return (
+        <>
+        <h1>Imoveis disponiveis:</h1>
         <div className={styles.grid}>
             {apartments.map((apartment, index) => (
                 <ImovelSelectionBox 
                     key={index} 
                     name={apartment.name} 
                     description={apartment.description} 
-                    value={apartment.value ? apartment.value.toString() : undefined}
+                    value={apartment.value.toString()}
                 />
             ))}
         </div>
+        </>
     );
 }

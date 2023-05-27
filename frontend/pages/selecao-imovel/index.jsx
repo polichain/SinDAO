@@ -5,24 +5,29 @@ import styles from '../../styles/Shop.module.css'
 export default function Shop() {
     const apartments = [
         {
+            tokenId: "2",
             name: "AP2",
             description: "Apartamento legal.",
         },
         {
+            tokenId: "3",
             name: "AP4",
             description: "Apartamento muito legal.",
         }
     ]
     return (
-        <div className={styles.grid}>
-            {apartments.map((apartment, index) => (
-                <ImovelSelectionBox 
-                    key={index} 
-                    name={apartment.name} 
-                    description={apartment.description} 
-                />
-            ))}
-            <BuyImovelBox onClick={() => router.push('/imoveis')}/>
-        </div>
+        <>
+            <h1>Escolha o imóvel:</h1>
+            <div className={styles.grid}>
+                {apartments.map((apartment, index) => (
+                    <ImovelSelectionBox 
+                        key={+apartment.tokenId} 
+                        name={apartment.name} 
+                        description={apartment.description} 
+                    />
+                ))}
+                <BuyImovelBox onClick={() => router.push('/imoveis')}/>
+            </div>
+        </>
     );
 }
