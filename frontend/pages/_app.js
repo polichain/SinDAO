@@ -5,39 +5,22 @@ import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains, createClient, useAccount, WagmiConfig } from "wagmi";
 import {
 	mainnet,
-	polygon,
-	optimism,
-	arbitrum,
-	goerli,
-	polygonMumbai,
-	optimismGoerli,
-	arbitrumGoerli,
-	polygonZkEvm,
-	polygonZkEvmTestnet,
+	sepolia,
 } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
-import MainLayout from "../layout/MainLayout";
 import { useRouter } from "next/router";
 
 const { chains, provider } = configureChains(
 	[
 		mainnet,
-		goerli,
-		polygon,
-		polygonMumbai,
-		optimism,
-		optimismGoerli,
-		arbitrum,
-    arbitrumGoerli,
-    polygonZkEvm,
-    polygonZkEvmTestnet
+		sepolia
 	],
 	[alchemyProvider({ apiKey: process.env.ALCHEMY_API_KEY }), publicProvider()]
 );
 
 const { connectors } = getDefaultWallets({
-	appName: "My Alchemy DApp",
+	appName: "SinDAO",
 	chains,
 });
 
