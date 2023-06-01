@@ -1,5 +1,5 @@
 import ImovelSelectionBox from '../../components/ImovelSelectionBox';
-import styles from '../../styles/Shop.module.css'
+import styles from './Shop.module.css'
 
 export default function Shop() {
     const apartments = [
