@@ -1,9 +1,9 @@
 import MainLayout from "../../layout/MainLayout"
 
-export default function votacoes() {
+export default function Tokens() {
     return (
         <MainLayout>
-            <h1>votacoes</h1>
+            <h1>Tokens</h1>
         </MainLayout>
     )
 }

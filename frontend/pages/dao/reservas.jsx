@@ -1,6 +1,6 @@
 import MainLayout from "../../layout/MainLayout"
 
-export default function votacoes() {
+export default function Reservas() {
     return (
         <MainLayout>
             <h1>reservas</h1>

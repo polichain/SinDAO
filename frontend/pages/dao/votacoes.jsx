@@ -1,9 +1,9 @@
 import MainLayout from "../../layout/MainLayout"
 
-export default function Contas() {
+export default function Votacoes() {
     return (
         <MainLayout>
-            <h1>contas</h1>
+            <h1>Votações</h1>
         </MainLayout>
     )
 }

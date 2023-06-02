@@ -35,6 +35,11 @@ const MainLayout = ({children}) => {
                 Votações
               </Link>
             </li>
+            <li>
+              <Link href="/dao/gerir-voto">
+                Gerenciar Voto
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
