@@ -1,4 +1,4 @@
-import styles from '../styles/ImovelSelectionBox.module.css';
+import styles from './ImovelSelectionBox.module.css';
 
 export default function buyImovelBox() {
     return (

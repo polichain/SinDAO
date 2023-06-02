@@ -1,5 +1,5 @@
 import ImovelSelectionBox from '../../components/ImovelSelectionBox';
-import BuyImovelBox from '.components/BuyImovelBox';
+import BuyImovelBox from '../../components/BuyImovelBox';
 import styles from './Shop.module.css'
 
 export default function Shop() {

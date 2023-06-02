@@ -76,7 +76,6 @@ contract SinDAO is
     }
 
     MoneyMovement[] public bills;
-    MoneyMovement[] public archivedBills;
     mapping(address => User) public users;
     Counters.Counter private _spaceIdCounter;
     mapping(uint256 => Space) public spaces;

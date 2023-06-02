@@ -6,6 +6,7 @@ import { configureChains, createClient, useAccount, WagmiConfig } from "wagmi";
 import {
 	mainnet,
 	sepolia,
+	hardhat
 } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
@@ -14,7 +15,8 @@ import { useRouter } from "next/router";
 const { chains, provider } = configureChains(
 	[
 		mainnet,
-		sepolia
+		sepolia,
+		hardhat
 	],
 	[alchemyProvider({ apiKey: process.env.ALCHEMY_API_KEY }), publicProvider()]
 );

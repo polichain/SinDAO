@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../styles/TemplatePage.module.css';
+import styles from './TemplatePage.module.css';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const MainLayout = ({children}) => {
